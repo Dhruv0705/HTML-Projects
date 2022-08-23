@@ -18,34 +18,59 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    
 }
 
 /* Header */
 header {
     height: 60px;
 }
-
 .navbar {
-    height: 100%;
-    width: 100%;
-    padding: 10px 20px;
-}
-
-.navbar ul {
-    height: 100%;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    padding: 6px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+.upper-left-nav:first-of-type{
+    margin-left: 15px;
+    display: flex;
     font-size: 14px;
 }
 
-.navbar ul li {
-    margin-left: 15px;
+.upper-left-nav a{
+    display: inline-block;
+    align-content: space-between;
+    padding: 5px;
+    margin: 0 5px;
+    color: #bdc1c6; 
+    justify-content: flex-start;
 }
 
-.navbar ul li a {
-    color: black;
+.upper-right-nav{
+    justify-content: flex-end;
+    display: flex;
+    align-content: center;
 }
+
+.upper-right-nav{
+    flex-grow: 1;
+}
+
+.upper-right-nav a{
+    color: white;
+}
+
+.upper-right-nav a.link{
+    line-height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 15px ;
+    padding-top: px;
+    font-size: 14px;
+}
+
+
 
 .link:hover {
     text-decoration: underline;
@@ -61,12 +86,13 @@ header {
 }
 
 .circle-shadow:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(37, 34, 34, 0.5);
 }
 
 .menu-icon,
 .user-icon span {
     font-size: 18px;
+    
 }
 
 .user-icon span {
@@ -74,7 +100,7 @@ header {
 }
 
 .user-icon {
-    background-color: #EF6C00;
+    background-color: #414040;
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -105,7 +131,7 @@ header {
 }
 
 .search-bar {
-    border: 1px solid lightgray;
+    border: 1px solid rgb(85, 84, 84);
     width: 600px;
     height: 45px;
     border-radius: 30px;
@@ -131,6 +157,7 @@ header {
     margin-right: 15px;
     font-size: 16px;
     border: none;
+    color: white;
 }
 
 .search-bar input:focus {
@@ -144,15 +171,15 @@ header {
 .search-btns button {
     height: 40px;
     font-size: 14px;
-    border: none;
+    border: 1px solid #303134;
     border-radius: 5px;
     margin-left: 10px;
-    color: black;
-    background-color: #F2F3F4;
+    color: white;
+    background-color: #303134;
 }
 
 .search-btns button:hover {
-    border: 1px solid lightgray;
+    border: 1px solid rgb(66, 66, 66);
 }
 
 .google-search-btn {
@@ -178,28 +205,36 @@ header {
 }
 
 /* Footer */
-footer {
-    
-    
-    
-
+footer{
+    background-color: #202124;
+    background: #202124;
 }
-
 .footer-content {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding:  20px;
 }
 
 .lower-footer {
     height: 50%;
     display: flex;
     justify-content: space-between;
+    
+}
+
+.middle-footer img{
+    height: 14px;
+    margin-right: 6px;
+    font-size: 14px;
 }
 
 .lower-footer ul li a {
     font-size: 14px;
     color: gray;
+    
+    
 }
 
 .lower-footer ul li a:hover {
@@ -208,6 +243,7 @@ footer {
 
 .lower-left-footer {
     display: flex;
+    
 }
 
 .lower-left-footer li {
